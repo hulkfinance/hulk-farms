@@ -1,13 +1,18 @@
 {
-  "name": "hardhat-project",
+  "license": "MIT",
+  "name": "@hulfkfinance/hulk-farms",
   "scripts": {
     "build": "npx hardhat compile",
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts --network testnet",
+    "deployLP": "npx hardhat run scripts/deployLP.ts --network testnet",
+    "deployOnlyToken": "npx hardhat run scripts/deployOnlyToken.ts --network testnet",
+    "verify": "npx hardhat verify --network testnet"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "`@nomiclabs/hardhat-waffle`": "^2.0.3",
     "@typechain/ethers-v5": "^7.2.0",
     "@typechain/hardhat": "^2.3.1",
     "@types/chai": "^4.3.1",
